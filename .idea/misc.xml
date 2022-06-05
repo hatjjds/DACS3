@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/activity_detail.xml" value="0.22" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/activity_player.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/activity_player_activiti.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/activity_splash.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/fragment_directory.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/fragment_favourite.xml" value="0.1" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/fragment_filmseries.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/fragment_new_anime.xml" value="0.1" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/fragment_news.xml" value="0.1" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/fragment_oddmovies.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/rcv_film_series.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/rcv_new_anime.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/rcv_odd_movie.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/layout/rec_detail_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/menu/menu_bottom_nav.xml" value="0.22" />
+        <entry key="..\:/Android Studio/DACS3/app/src/main/res/menu/search_view.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

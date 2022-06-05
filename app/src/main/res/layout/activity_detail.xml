@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colordetaillayout"
+    tools:context=".DetailActivity.DetailActivity">
+
+    <TextView
+        android:id="@+id/detail_name_anime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name anime"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_below="@id/detail_name_anime"
+        />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/play_anime"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/detail_image"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:src="@drawable/playbutton"-->
+<!--        android:layout_toEndOf="@id/download"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/download"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/detail_image"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:src="@drawable/downloading"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/add_love_list"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/detail_image"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:src="@drawable/love"-->
+<!--        android:layout_toStartOf="@id/download"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/detail_image"
+        android:layout_marginTop="15dp"
+        android:text="detail"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_total_episodes"
+        android:text="Tổng số tập: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/total_episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="12"
+        android:layout_toEndOf="@id/tv_total_episodes"
+        android:layout_below="@id/detail"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Danh mục: "
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_total_episodes"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anime bộ"
+        android:textSize="14sp"
+        android:layout_below="@id/tv_total_episodes"
+        android:layout_toEndOf="@id/tv_category"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_list_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách tập"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_category"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/white"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_list_play"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
