@@ -3,6 +3,7 @@ package com.example.dacs3.Home;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,7 +32,7 @@ public class NewAnime extends Fragment {
     private RecyclerView recyclerView;
     private List<NewModel> animeNewList;
 
-    private static String Json_URL = "http://192.168.1.103/Json/select.php";
+    private static final String Json_URL = "http://192.168.1.103/Json/select.php";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -95,4 +96,5 @@ public class NewAnime extends Fragment {
         recyclerView.setLayoutManager(new GridLayoutManager(view.getContext(), 2));
         recyclerView.setAdapter(adaptery);
     }
+
 }

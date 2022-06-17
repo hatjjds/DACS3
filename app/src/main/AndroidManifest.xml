@@ -12,16 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DACS3">
         <activity
+            android:name=".User.RegistrarActivity"
+            android:exported="false"
+            android:parentActivityName=".User.LoginActivity"/>
+        <activity
+            android:name=".User.LoginActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Search.SearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".PlayerActiviti"
             android:exported="false"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".DetailActivity.DetailActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AppUtil.Splash"
             android:exported="true">

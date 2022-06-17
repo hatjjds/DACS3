@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,15 +20,19 @@ import com.example.dacs3.DetailActivity.DetailActivity;
 import com.example.dacs3.Model.NewModel;
 import com.example.dacs3.R;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
-public class RcvNewAnimeAdapter extends RecyclerView.Adapter<RcvNewAnimeAdapter.ViewHolder> {
+public class RcvNewAnimeAdapter extends RecyclerView.Adapter<RcvNewAnimeAdapter.ViewHolder> implements Filterable {
     private Context context;
     private List<NewModel> mData;
+    private List<NewModel> mDataOld;
 
     public RcvNewAnimeAdapter(Context context, List<NewModel> mData) {
         this.context = context;
         this.mData = mData;
+        this.mDataOld=mData;
     }
 
     @NonNull
@@ -73,5 +79,35 @@ public class RcvNewAnimeAdapter extends RecyclerView.Adapter<RcvNewAnimeAdapter.
             backgroud=itemView.findViewById(R.id.img_view_home);
             constraintLayout=itemView.findViewById(R.id.home_layout);
         }
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+                String search=charSequence.toString();
+                if(search.isEmpty()){
+                    mData=mDataOld;
+                }else{
+                    List<NewModel> list=new ArrayList<>();
+                    for(NewModel model:mDataOld){
+                        if(model.getName_anime().toLowerCase().contains(search.toLowerCase())){
+                            list.add(model);
+                        }
+                    }
+                    mData=list;
+                }
+                FilterResults results=new FilterResults();
+                results.values=mData;
+                return results;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                mData= (List<NewModel>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 }

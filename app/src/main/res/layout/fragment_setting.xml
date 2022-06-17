@@ -1,9 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Setting.SettingFragment">
 
+    <TextView
+        android:id="@+id/tv_acc"
+        android:layout_marginTop="7dp"
+        android:text="Tài khoản"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colortextsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/tv_acc"
+        android:drawableLeft="@drawable/user"
+        android:text="Đăng nhập"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_below="@id/btn_login"
+        android:drawableLeft="@drawable/logout"
+        android:text="Đăng xuất"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_dark"
+        android:layout_marginTop="7dp"
+        android:text="Kiểu giao diện"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colortextsetting"
+        android:layout_below="@id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btn_dark"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/tv_dark"
+        android:drawableLeft="@drawable/moon"
+        android:text="sáng"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_setting_watch"
+        android:layout_marginTop="7dp"
+        android:text="Cài đặt xem Anime"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colortextsetting"
+        android:layout_below="@id/btn_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckBox
+        android:id="@+id/check_box1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vuốt ngang để tua"
+        android:layout_below="@id/tv_setting_watch"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/check_box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vuốt dọc bên trái để điều chỉnh độ sáng"
+        android:layout_below="@id/check_box1"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/check_box3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vuốt dọc bên trái để điều chỉnh âm lượng"
+        android:layout_below="@id/check_box2"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_marginTop="7dp"
+        android:text="Thông báo"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colortextsetting"
+        android:layout_below="@id/check_box3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckBox
+        android:id="@+id/check_box4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nhận thông báo khi có tập mới"
+        android:layout_below="@id/tv_notice"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</RelativeLayout>

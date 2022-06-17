@@ -11,4 +11,6 @@
     <color name="tabselected">#6666FF</color>
     <color name="buttonplay">#acaca2</color>
     <color name="colordetaillayout">#747577</color>
+    <color name="colortextsetting">#dca143</color>
+    <color name="iconsetting">#4e66ff</color>
 </resources>
